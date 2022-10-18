@@ -2,18 +2,18 @@
 using namespace std;
 int main()
 {
+	float x;
+	cout << "Nhap x: ";
+	cin >> x;
 	int n;
 	cout << "Nhap n: ";
 	cin >> n;
-	int s = 0;
-	int t = 1;
+	float s = x;
 	int i = 1;
 	while (i <= n)
 	{
-		t = t * i;
-		s = s + t;
-		i = i + 1;
+		s = s * (x + i);
+		i++;
 	}
-	cout << "S(" << n << ")=" << s;
-	return 1;
+	cout << "S(" << x << "," << n << ")=" << s;
 }

@@ -5,15 +5,16 @@ int main()
 	int n;
 	cout << "Nhap n: ";
 	cin >> n;
+	int k;
+	cout << "Nhap k: ";
+	cin >> k;
 	int s = 0;
-	int t = 1;
 	int i = 1;
 	while (i <= n)
 	{
-		t = t * i;
-		s = s + t;
-		i = i + 1;
+		s = s + pow(i,k);
+		i++;
 	}
-	cout << "S(" << n << ")=" << s;
+	cout << "S(" << n << "," << k << ")=" << s;
 	return 1;
 }

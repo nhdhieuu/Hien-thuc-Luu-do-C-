@@ -11,7 +11,7 @@ int main()
 	while (i <= n)
 	{
 		t = t * i;
-		s = s + t;
+		s = s + t *i;
 		i = i + 1;
 	}
 	cout << "S(" << n << ")=" << s;
